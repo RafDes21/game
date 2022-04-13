@@ -1,0 +1,10 @@
+.nombre{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5% 0;
+}
+.icono{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+}
