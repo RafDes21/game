@@ -1,10 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .nombre{
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 5% 0;
+padding: 5% 0;
 }
 .icono{
     font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-weight: 900;
+    transition: all 200ms;
+}
+.icono:hover{
+    background-color: rgb(55, 204, 50);
+    transform: scale(1.1);
+
+}
+#contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+   
+}
+main{
+    background-image: url(/img/encanto1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+}
+label{
+    font-size: 30px;
+    font-weight: bold;
+    color: beige;
+    text-shadow: 2px 2px 2px green;
+}
+main .contador{
+    color: rgb(11, 14, 14);
+    font-weight:lighter;
+    text-shadow: 2px 2px 2px rgb(228, 225, 225);
+  text-decoration:underline;
+}
+.nivel1 .number{
+    color: green;
+    font-size: 50px;
+    font-weight:bold;
+    text-shadow: 2px 2px 2px black;
+    background-color: rgb(153,102,153,0.7);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+input{
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 2px solid green;
+    background-color: rgb(153,102,153,0.7);
 }

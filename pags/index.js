@@ -3,17 +3,24 @@ function probar() {
 
 }
 
+let cont = 0
 const btn = document.getElementById(`btn`)
 btn.addEventListener(`click`, () => {
-
+    
 
     if (numbers[0] === parseInt(probar())) {
+
+        cont++
         const final = document.getElementById(`result-final`)
         final.innerHTML = `FELICITACIONES!!! ES CORRECTO SOS UN GENI@ ${arname[0]}`.toUpperCase()
-
+        const contador = document.getElementById(`contador`)
+        contador.innerHTML = cont
     } else {
+        cont--
         const resultado = document.getElementById(`result-final`)
         resultado.innerHTML = `NO ES LA RESPUESTA, PERO PODES VOLVER A INTENTARLO, ANIMO ${arname[0]}`.toUpperCase()
+        const contador = document.getElementById(`contador`)
+        contador.innerHTML = cont
     }
 
 })
@@ -45,11 +52,11 @@ const btnname = document.getElementById(`btn-name`)
 
 btnname.addEventListener(`click`, () => {
     arname.shift()
-            const name = document.getElementById(`name`).value
-           
-            const nameone = document.querySelector(`.nameone`)
-            nameone.innerHTML = `hola ${name}`.toUpperCase()
-            arname.push(name)
-            
+    const name = document.getElementById(`name`).value
+
+    const nameone = document.querySelector(`.nameone`)
+    nameone.innerHTML = `hola ${name}`.toUpperCase()
+    arname.push(name)
+
     nameFormulario.reset()
 })
