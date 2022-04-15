@@ -28,7 +28,7 @@ padding: 5% 0;
    
 }
 main{
-    background-image: url(/img/encanto1.jpg);
+    background-image: url(../img/encanto1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height:100%;
@@ -59,4 +59,9 @@ input{
     border-radius: 5px;
     border: 2px solid green;
     background-color: rgb(153,102,153,0.7);
+}
+@media screen and (max-width:391px){
+#btn-name{
+    margin-left: 60%;
+}
 }
